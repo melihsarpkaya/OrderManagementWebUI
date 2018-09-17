@@ -1,0 +1,333 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="~/Scripts/jquery-3.3.1.js"></script>
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>Start Session</h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtStartSessionName" placeholder="txtStartSessionName" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnStartSessionButton" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>End Session</h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtEndSessionName" placeholder="txtEndSessionName" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnEndSessionButton" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>Create Customer</h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtName" placeholder="txtName" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtSurname" placeholder="txtSurname" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtAddress" placeholder="txtAddress" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnCreateCustomer" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>update Customer</h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="upCustId" placeholder="upCustId" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtName" placeholder="uptxtName" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtSurname" placeholder="uptxtSurname" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtAddress" placeholder="uptxtAddress" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="upbtnUpdateCustomer" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>delete Customer</h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="delcustId" placeholder="delcustId" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnDeleteCustomer" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>Create Product </h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtBarcode" placeholder="txtBarcode" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtDescription" placeholder="txtDescription" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtpQuantity" placeholder="txtpQuantity" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtpPrice" placeholder="txtpPrice" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnCreateProduct" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>update Product </h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtProductid" placeholder="uptxtProductid" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtBarcode" placeholder="uptxtBarcode" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtDescription" placeholder="uptxtDescription" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtpQuantity" placeholder="uptxtpQuantity" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtpPrice" placeholder="uptxtpPrice" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnUpdateProduct" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>delete Product </h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtProductid" placeholder="uptxtProductid" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnDeleteProduct" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>Create Customer Order </h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtReciptNo" placeholder="txtReciptNo" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtCustomerId" placeholder="txtCustomerId" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtProductId" placeholder="txtProductId" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtQuantity" placeholder="txtQuantity" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="txtPrice" placeholder="txtPrice" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnCustomerOrder" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>Update Customer Order </h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtReciptNoId" placeholder="uptxtReciptNoId" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtReciptNo" placeholder="uptxtReciptNo" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtCustomerId" placeholder="uptxtCustomerId" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtProductId" placeholder="uptxtProductId" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtQuantity" placeholder="uptxtQuantity" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="uptxtPrice" placeholder="uptxtPrice" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnUpCustomerOrder" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-6"><h2>Create Customer Order </h2></div><div class="col-md-6"></div>
+        <div class="col-md-6"><input id="delCustOrdId" placeholder="delCustOrdId" type="text" name="fname"></div><div class="col-md-6"></div>
+        <div class="col-md-6"><button id="btnDelCustomerOrder" type="button">Ok</button><div class="col-md-6"></div></div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('#btnStartSessionButton').click(function () {
+        var startSessionName = $('#btnStartSessionButton').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/SessionManagement",
+            "method": "POST",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": startSessionName.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+    $('#btnEndSessionButton').click(function () {
+        var endSessionName = $('#txtEndSessionName').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/SessionManagement",
+            "method": "Delete",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": endSessionName.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+
+    $('#btnCreateCustomer').click(function () {
+        var txtName = $('#txtName').val();
+        var txtSurname = $('#txtSurname').val();
+        var txtAddress = $('#txtAddress').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/Customer",
+            "method": "Post",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": txtName.toString() + "," + txtSurname.toString() + "," + txtAddress.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+    $('#upbtnUpdateCustomer').click(function () {
+        var upCustId = $('#upCustId').val();
+        var uptxtName = $('#uptxtName').val();
+        var uptxtSurname = $('#uptxtSurname').val();
+        var uptxtAddress = $('#uptxtAddress').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/Customer",
+            "method": "Put",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": upCustId.toString() + "," + uptxtName.toString() + "," + uptxtSurname.toString() + "," + uptxtAddress.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+    $('#btnDeleteCustomer').click(function () {
+        var delcustId = $('#delcustId').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/Customer",
+            "method": "Delete",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": delcustId.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+
+    $('#btnCreateProduct').click(function () {
+        var txtBarcode = $('#txtBarcode').val();
+        var txtDescription = $('#txtDescription').val();
+        var txtpQuantity = $('#txtpQuantity').val();
+        var txtpPrice = $('#txtpPrice').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/Product",
+            "method": "Post",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": txtBarcode.toString() + "," + txtDescription.toString() + "," + txtpQuantity.toString() + "," + txtpPrice.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+    $('#btnUpdateProduct').click(function () {
+        var uptxtProductid = $('#uptxtProductid').val();
+        var uptxtBarcode = $('#uptxtBarcode').val();
+        var uptxtDescription = $('#uptxtDescription').val();
+        var uptxtpQuantity = $('#uptxtpQuantity').val();
+        var uptxtpPrice = $('#uptxtpPrice').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/Product",
+            "method": "Put",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": uptxtProductid.toString() + "," + uptxtBarcode.toString() + "," + uptxtDescription.toString() + "," + uptxtpQuantity.toString() + "," + uptxtpPrice.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+    $('#btnDeleteCustomer').click(function () {
+        var btnDeleteProduct = $('#btnDeleteProduct').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/Product",
+            "method": "Delete",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": btnDeleteProduct.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+
+    $('#btnCustomerOrder').click(function () {
+        var txtReciptNo = $('#txtReciptNo').val();
+        var txtCustomerId = $('#txtCustomerId').val();
+        var txtProductId = $('#txtProductId').val();
+        var txtQuantity = $('#txtQuantity').val();
+        var txtPrice = $('#txtPrice').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/CustomerOrder",
+            "method": "Post",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": txtReciptNo.toString() + ","
+                + txtCustomerId.toString() + ","
+                + txtProductId.toString() + ","
+                + txtQuantity.toString() + ","
+                + txtPrice.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+    $('#btnUpCustomerOrder').click(function () {
+        var txtReciptNo = $('#uptxtReciptNoId').val();
+        var txtReciptNo = $('#txtReciptNo').val();
+        var txtCustomerId = $('#txtCustomerId').val();
+        var txtProductId = $('#txtProductId').val();
+        var txtQuantity = $('#txtQuantity').val();
+        var txtPrice = $('#txtPrice').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/CustomerOrder",
+            "method": "Put",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": txtReciptNo.toString() + ","
+                + txtCustomerId.toString() + ","
+                + txtProductId.toString() + ","
+                + txtQuantity.toString() + ","
+                + uptxtReciptNoId.toString() + ","
+                + txtPrice.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+    $('#btnDelCustomerOrder').click(function () {
+        var delCustOrdId = $('#delCustOrdId').val();
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "http://localhost:4833/api/values/Product",
+            "method": "Delete",
+            "headers": {
+                "Content-Type": "application/json",
+                "Access-Control-Allow-Origin": "*"
+            },
+            "processData": false,
+            "data": delCustOrdId.toString()
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+    });
+
+</script>
